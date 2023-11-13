@@ -7,7 +7,7 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   template: `
-    <h1 class="text-3xl font-bold underline text-red-600">
+    <h1 class="text-3xl font-bold text-red-600  underline">
       Hello {{ title }}!
     </h1>
   `,
