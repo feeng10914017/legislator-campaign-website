@@ -1,4 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #6f7b20;
+    --secondary: #dab071;
+    --info: #051a1d;
+    --high-light-primary: #cdcf84;
+    --high-light-yellow: #e4dd87;
+    --high-light-brown: #e9cb9e;
+  }
+}
+
+body {
+  font-family: "Noto Sans TC";
+  @apply text-nt-m laptop:text-nt;
+}
+
+h1 {
+  @apply text-h1-m laptop:text-h1;
+}
+
+h2 {
+  @apply text-h2-m laptop:text-h2;
+}
+
+h3 {
+  @apply text-h3-m laptop:text-h3;
+}
+
+h4 {
+  @apply text-h4-m laptop:text-h4;
+}
+
+h5 {
+  @apply text-h5-m laptop:text-h5;
+}
+
+h6 {
+  @apply text-h6-m laptop:text-h6;
+}
+
+strong {
+  @apply text-lt-m laptop:text-lt;
+}

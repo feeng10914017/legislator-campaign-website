@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header.component';
+import { FooterComponent } from './components/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   template: `
-    <h1 class="text-3xl font-bold text-red-600  underline">
-      Hello {{ title }}!
-    </h1>
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
   `,
   styles: [],
 })
